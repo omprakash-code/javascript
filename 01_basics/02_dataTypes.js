@@ -1,86 +1,87 @@
-/*---------------------------------------------------------------------
-* JavaScript | DataTypes | lectur: 2 | Revision | Author: Omprakash
-*----------------------------------------------------------------------
+/* ---------------------------------------------------------------------
+ * JavaScript | Data Types | Lecture: 2 | Revision | Author: Omprakash
+ * -------------------------------------------------------------------*/
 
-/*
-* There difference between old JavaScript and New JavaScript
-* Classes, Modules, Arrow Functions, these were not available
-* Most programm was written in old javaScript
-* JavaScipt organization/Commetee don't wanted to make the old code useless because you are now writing new js code
-* they introduced a new keyword ("Use Strict";) so the all code will be treated as new version of js by V8 engine
-* However, now this is not necessary to write "use strict"; becuase advance V8 already treat as new version code
-*/
+/* ---------------------------------------------------------------------
+ * Old JavaScript vs Modern JavaScript
+ * ---------------------------------------------------------------------
+ * In early JavaScript (before ES6):
+ *   - Classes, Modules, and Arrow Functions were not available.
+ *   - Most legacy codebases were written in the older syntax.
+ *
+ * To maintain backward compatibility/To avoid breaking old code///:
+ *   - The committee introduced "use strict";
+ *   - This directive tells the V8 engine to treat code as modern JS.
+ *
+ * NOTE: Modern JavaScript engines (like V8) already follow strict mode
+ *       by default. Adding "use strict"; is no longer required.
+ * -------------------------------------------------------------------*/
 
+/* ---------------------------------------------------------------------
+ * Using alert() in Node.js
+ * ---------------------------------------------------------------------
+ * WARNING: The alert() function only works in browsers.
+ *          If you run it in Node.js, it will throw an error.
+ *
+ * In Node.js, use console.log() or other alternatives instead.
+ * -------------------------------------------------------------------*/
 
-/*----------------------
-* Use of alert() in node 
-*------------------------
-* It will throw an error, it only work on browser, there are different method to run this in node.js
-* Don't run alert() in node.js
-*/
+/* ---------------------------------------------------------------------
+ * Code Readability Guidelines
+ * ---------------------------------------------------------------------
+ * - Semicolons are optional in JavaScript; avoid unnecessary usage.
+ * - Always keep one statement per line for clarity.
+ *
+ * Example (Don't):
+ *   console.log("Omprakash"); console.log("Deepu");
+ *
+ * Example (Do):
+ *   console.log("Omprakash");
+ *   console.log("Deepu");
+ * -------------------------------------------------------------------*/
 
-/*----------------------
-* Code Readability
-*------------------------
-* Avoid writing semicolon in js (Not required).
-* Always write code line by line, do not write 2 and more line of code in one line by using semicolon
-*
-*****************
-* Example (Don't)
-* 
-*  console.log("Omprakash"); console.log("Deepu")
-* --------------------------------------------------
-* Example (Do)
-* 
-*  console.log("Omprakash"); 
-*  console.log("Deepu")
-* 
-*/
+/* ---------------------------------------------------------------------
+ * Primitive Data Types
+ * ---------------------------------------------------------------------
+ * number     -> e.g., 42 (supports values up to 2^53)
+ * bigint     -> for very large integers
+ * string     -> e.g., "Omprakash"
+ * boolean    -> true / false
+ * null       -> standalone empty value
+ * undefined  -> variable declared but not assigned
+ * symbol     -> unique identifier (used in React for unique components)
+ * -------------------------------------------------------------------*/
 
+/* ---------------------------------------------------------------------
+ * Non-Primitive Data Types
+ * ---------------------------------------------------------------------
+ * object -> collection of key-value pairs
+ *
+ * NOTE: Only objects (including arrays, functions, dates, etc.)
+ *       are non-primitive. The rest are primitive.
+ * -------------------------------------------------------------------*/
 
-/*----------------------
-* Premitives DataTypes
-*------------------------
-* number    => 2 (2 to the power of 53)
-* bigint    => Large number
-* string    => "Omprakash"
-* boolean   => true/false
-* null      => this is standalone value
-* undefined => 
-* symbol    => unique //To find uniqe value, we will use this in react to check unque componants
-*
-*/
+/* ---------------------------------------------------------------------
+ * Checking Data Types
+ * ---------------------------------------------------------------------
+ * Use the typeof operator:
+ * -------------------------------------------------------------------*/
+console.log(typeof "Omprakash"); // string
+console.log(typeof null);        // object (quirk in JS)
+console.log(typeof undefined);   // undefined
 
-/*----------------------
-* Non-Premitives DataTypes
-*------------------------
-* object   => 2 (2 to the power of 53)
-* bigint    => Large number
-* string    => "Omprakash"
-* boolean   => true/false
-* null      => this is standalone value
-* undefined => 
-* symbol    => unique //To find uniqe value, we will use this in react to check unque componants
-*
-*/
-
-// Use typeof keyword to check the datatype of any variable or value
-// Example 
-console.log(typeof "Omprakash") //Return: string
-console.log(typeof null) //Return: object (This is cons of js)
-console.log(typeof undefined) //Return: undefined (This is cons of js)
-
-/*----------------------
-* JavaScipt Documentation
-*------------------------
-* There are two main documentation
-* 1. https://developer.mozilla.org/en-US/docs/Web/JavaScript 
-*    - This is not original documentation
-*    - This is easy to read
-*    - Maintained by Mozilla
-*
-* 2. https://tc39.es/ecma262/
-*    - This is original documentation
-*    - This is hard to read
-*    - This is standerd set by EcmaScript
-*/
+/* ---------------------------------------------------------------------
+ * JavaScript Documentation
+ * ---------------------------------------------------------------------
+ * 1. MDN Documentation:
+ *    - URL: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+ *    - Easy to understand
+ *    - Maintained by Mozilla
+ *    - Not the official standard
+ *
+ * 2. ECMAScript Specification:
+ *    - URL: https://tc39.es/ecma262/
+ *    - Official and authoritative
+ *    - Defines the language standard
+ *    - More difficult to read
+ * -------------------------------------------------------------------*/
